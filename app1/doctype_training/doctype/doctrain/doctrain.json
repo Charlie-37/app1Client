@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DocTrain.####",
+ "creation": "2022-11-03 14:31:42.204254",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "column_break_2",
+  "validate_data",
+  "column_break_4",
+  "set_password",
+  "profile_pic",
+  "pimage",
+  "column_break_7",
+  "age",
+  "date_of_birth",
+  "currunt_datetime",
+  "section_break_13",
+  "vehdet",
+  "etable",
+  "address",
+  "kyc_doc",
+  "exdur",
+  "about_yourself",
+  "designation",
+  "your_location",
+  "your_currency",
+  "html_code",
+  "make_barcode",
+  "section_break_22",
+  "pick_color",
+  "your_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_data",
+   "fieldtype": "Check",
+   "label": "Validate Data"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "set_password",
+   "fieldtype": "Password",
+   "label": "Set Password",
+   "mandatory_depends_on": "full_name"
+  },
+  {
+   "depends_on": "set_password",
+   "fieldname": "profile_pic",
+   "fieldtype": "Attach Image",
+   "label": "Profile Pic",
+   "options": "pimage"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "currunt_datetime",
+   "fieldtype": "Datetime",
+   "label": "Currunt DateTime"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "pimage",
+   "fieldtype": "Image",
+   "label": "View Image",
+   "options": "profile_pic"
+  },
+  {
+   "fieldname": "kyc_doc",
+   "fieldtype": "Attach",
+   "label": "KYC Doc"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "exdur",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Exp Duration"
+  },
+  {
+   "fieldname": "about_yourself",
+   "fieldtype": "Text Editor",
+   "label": "About Yourself"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "Frappe Developer\nFlutter\nDotNet\nHR"
+  },
+  {
+   "fieldname": "your_location",
+   "fieldtype": "Geolocation",
+   "label": "Your Location"
+  },
+  {
+   "fieldname": "your_currency",
+   "fieldtype": "Currency",
+   "label": "Your Currency"
+  },
+  {
+   "fieldname": "html_code",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Code"
+  },
+  {
+   "fieldname": "make_barcode",
+   "fieldtype": "Barcode",
+   "label": "Make Barcode"
+  },
+  {
+   "fieldname": "pick_color",
+   "fieldtype": "Color",
+   "label": "Pick Color"
+  },
+  {
+   "fieldname": "your_signature",
+   "fieldtype": "Signature",
+   "label": "Your Signature"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "etable",
+   "fieldtype": "Link",
+   "label": "External Table",
+   "options": "EmployeeForm"
+  },
+  {
+   "fieldname": "vehdet",
+   "fieldtype": "Table",
+   "label": "Vehicle Detail",
+   "options": "ChildDocTrain"
+  }
+ ],
+ "image_field": "profile_pic",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-03 17:18:46.436787",
+ "modified_by": "Administrator",
+ "module": "DocType_Training",
+ "name": "DocTrain",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
